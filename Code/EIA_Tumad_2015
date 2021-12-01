@@ -1,0 +1,329 @@
+var Tumad = 
+    /* color: #7e7e7e */
+    /* shown: false */
+    /* locked: true */
+    /* displayProperties: [
+      {
+        "type": "rectangle"
+      }
+    ] */
+    ee.FeatureCollection(
+        [ee.Feature(
+            ee.Geometry.Polygon(
+                [[[26.761355229549153, 40.31220893495116],
+                  [26.761355229549153, 40.29001824315344],
+                  [26.795086690120442, 40.29001824315344],
+                  [26.795086690120442, 40.31220893495116]]], null, false),
+            {
+              "system:index": "0"
+            })]),
+    grass = 
+    /* color: #bf04c2 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPolygon(
+            [[[[26.765720917641264, 40.296735846006456],
+               [26.766021325050932, 40.29732501503122],
+               [26.765506340920073, 40.29758686628207],
+               [26.764733864723784, 40.29742320936919]]],
+             [[[26.762416436134917, 40.298830645865436],
+               [26.76207311338101, 40.29843787583898],
+               [26.763231827675444, 40.29811056573943],
+               [26.763660981117827, 40.298405144900386]]]]),
+        {
+          "class": 0,
+          "system:index": "0"
+        }),
+    forest = 
+    /* color: #ff0000 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPolygon(
+            [[[[26.778166367470366, 40.29375719063284],
+               [26.776921822487456, 40.293593524444276],
+               [26.77683599179898, 40.29254605145097],
+               [26.777994706093413, 40.2923169145694],
+               [26.77902467435513, 40.29277518755563]]],
+             [[[26.778423859535796, 40.29032011743125],
+               [26.78005464261685, 40.29058199582711],
+               [26.779882981239897, 40.29166223348385],
+               [26.777994706093413, 40.291269421788286]]]]),
+        {
+          "class": 1,
+          "system:index": "0"
+        }),
+    water = 
+    /* color: #00ff00 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.Polygon(
+            [[[26.62913294808677, 40.31008037012977],
+              [26.633252821133645, 40.31531621354266],
+              [26.630334577725442, 40.31819575438146],
+              [26.62518473641685, 40.31361460896127]]]),
+        {
+          "class": 2,
+          "system:index": "0"
+        }),
+    built_up = 
+    /* color: #0000ff */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPolygon(
+            [[[[26.772529880013636, 40.296662639605906],
+               [26.772808829751185, 40.2969572250796],
+               [26.771757403817347, 40.29721907775581]]],
+             [[[26.78345183512228, 40.29744819801505],
+               [26.78366641184347, 40.29731727224776],
+               [26.785232821908167, 40.297857339402626],
+               [26.784953872170618, 40.298102823045994]]],
+             [[[26.759790737597363, 40.30120246948234],
+               [26.759297211138623, 40.30182432885607],
+               [26.758717853991406, 40.301677046890134]]],
+             [[[26.75861056563081, 40.30172614091447],
+               [26.75891097304048, 40.30187342277336],
+               [26.75839598890962, 40.30203706890669],
+               [26.758288700549024, 40.30175887024421]]]]),
+        {
+          "class": 3,
+          "system:index": "0"
+        }),
+    bare = 
+    /* color: #999900 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPolygon(
+            [[[[26.794766226321904, 40.296527196700026],
+               [26.79485205701038, 40.29691997783357],
+               [26.794723310977666, 40.2975418766254],
+               [26.793993750125615, 40.29682178276421]]],
+             [[[26.793822088748662, 40.29489058406692],
+               [26.79463748028919, 40.295021514536316],
+               [26.79416541150257, 40.29551250153706],
+               [26.79360751202747, 40.29518517726629]]]]),
+        {
+          "class": 4,
+          "system:index": "0"
+        }),
+    crop = 
+    /* color: #009999 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPolygon(
+            [[[[26.77026038717054, 40.29424195896588],
+               [26.77031403135084, 40.2937345961308],
+               [26.771955543267953, 40.2937182295243],
+               [26.77226667951368, 40.294282875157556]]],
+             [[[26.770399862039316, 40.29189332803945],
+               [26.771408372628915, 40.291983346756965],
+               [26.77125816892408, 40.29264620816625],
+               [26.770163827646005, 40.29254800688627]]]]),
+        {
+          "class": 5,
+          "system:index": "0"
+        }),
+    grass_v = 
+    /* color: #d63000 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPoint(
+            [[26.76639862248371, 40.304152438266684],
+             [26.76663465687702, 40.304283350788445],
+             [26.76534719654987, 40.305199731337005],
+             [26.765089704484442, 40.304970637365344]]),
+        {
+          "class": 0,
+          "system:index": "0"
+        }),
+    forest_v = 
+    /* color: #98ff00 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPoint(
+            [[26.775196268052557, 40.29844113255367],
+             [26.775561048478583, 40.29804836026286],
+             [26.77862949559162, 40.297606488706464],
+             [26.774187757462958, 40.2977701451754],
+             [26.794248418485296, 40.299324861859695]]),
+        {
+          "class": 1,
+          "system:index": "0"
+        }),
+    water_v = 
+    /* color: #0b4a8b */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPoint(
+            [[26.640321472647845, 40.32358887935332],
+             [26.63817570543593, 40.32103676912752],
+             [26.63620159960097, 40.3185500048232]]),
+        {
+          "class": 2,
+          "system:index": "0"
+        }),
+    built_up_v = 
+    /* color: #ffc82d */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPoint(
+            [[26.74400139815326, 40.30588647187229],
+             [26.743379125661804, 40.30578828983489],
+             [26.74395848280902, 40.305035556140496],
+             [26.743293294973327, 40.30511737542666]]),
+        {
+          "class": 3,
+          "system:index": "0"
+        }),
+    bare_v = 
+    /* color: #00ffff */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPoint(
+            [[26.781669824804528, 40.311802941646555],
+             [26.79411527463363, 40.29373662654546],
+             [26.762787073339684, 40.29111791916478]]),
+        {
+          "class": 4,
+          "system:index": "0"
+        }),
+    crop_v = 
+    /* color: #bf04c2 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPoint(
+            [[26.771752411920808, 40.294982429827755],
+             [26.771301800806306, 40.294966063523496],
+             [26.772138650018952, 40.29465510298928],
+             [26.7729951609905, 40.292496760846575],
+             [26.77200810807302, 40.2923494585473],
+             [26.770935224467063, 40.291580207990215]]),
+        {
+          "class": 5,
+          "system:index": "0"
+        });
+/*This script is based on PK's script. 
+2015 Landsat8 with PK's land use classification.*/
+
+//1.1 Set the map center according to the research area
+Map.setCenter(26.78761942022299,40.29953888104223,14);
+
+//--------------------------------------------------------
+//1.2 Define input data
+
+//Lin added_import the same geometry for same EIA project
+var landsat = ee.ImageCollection("LANDSAT/LC08/C01/T1_SR")
+var landsat = landsat.filterBounds(Tumad) //According to the research area
+                     .filterDate('2015-01-01','2015-12-31') //According to the EIA time
+                     .filter(ee.Filter.lte('CLOUD_COVER', 10))
+ 
+// select subsat of image bands and rename them for easier reference
+// first select band subset, then loop over images in collection and rename the bands
+var landsat = landsat
+  .select(['B2','B3','B4','B5','B6','B7','B10']) 
+  .map(function(x){return x.rename(['blue','green','red', 'nir','swir1','swir2','tir'])})
+// for every pixel, get the median pixel value of all images in the collection
+// for a quick way to filter clouds and possible artefacts
+var satimg = landsat.median()
+ 
+// clip the result to the research area
+var satimg = satimg.clip(Tumad)
+
+//--------------------------------------------------------
+//1.3 Visualize satellite imagery
+
+//Lin added_ visualize the rgb map for research area
+var landsat_rgb = {
+  bands: ['red', 'green', 'blue'],
+  min: 0,
+  max: 3000, //using inspector to check the value and adjusting this value to get a better visualiztion
+  gamma: 1.4,
+};
+Map.addLayer(satimg,landsat_rgb,'Landsat8');
+
+//------------------------------------
+//1.4 Obtain training data
+
+//Draw the training area 
+// combine the sample regions you've create into a single collection
+var sampleregs  = ee.FeatureCollection([grass,forest,water,built_up,bare,crop])
+
+//-------------------------------------------------------------
+//1.5 Classify image
+
+// selection of bands to use for classification algorithm
+var bands   = ['green','red','nir','swir1','swir2']
+ 
+// sample pixels from the image using the regions
+var training = satimg.sampleRegions({
+  collection: sampleregs,
+  properties: ['class'],
+  scale: 30 //Lin_adjust the resolution
+})
+
+// define classifier and train with the samples
+var mdmodel  = ee.Classifier.minimumDistance('euclidean')
+var trained  = mdmodel.train(training, 'class', bands)
+
+// apply classifier to the image
+var classimg = satimg.classify(trained)
+
+// lists with class names, values and colors (for colors use hex RGB or html5 color names)
+var classlab = ['Grassland','Forest','Water','Built-up','Bare','Cropland']
+var classval = [0,1,2,3,4,5]
+var classcol = ['YellowGreen', '184930', 'LightSkyBlue', '#cacaca', 'Moccasin', 'OliveDrab']  
+Map.addLayer(classimg, {min:0, max:5, palette: classcol}, 'Classification',true)
+var lg = require('users/philipkraaijenbrink/tools:legends')
+lg.classLegend(classval, classlab, classcol)
+
+//----------------------------------------------------------
+//1.6 Accuracy assessment
+
+// Meng Chiao Lin added_ Get a confusion matrix representing resubstitution accuracy.
+var trainAccuracy = trained.confusionMatrix();
+print('Resubstitution error matrix: ', trainAccuracy);
+print('Training overall accuracy: ', trainAccuracy.accuracy());
+
+//Define the validation pixels by creating validation pixels set
+
+// combine the validation pixels you've create into a single collection
+var validationpixels  = ee.FeatureCollection([grass_v,forest_v,water_v,built_up_v,bare_v,crop_v])
+
+
+//Sample the input with a different random seed to get validation data.
+var validation = satimg.sampleRegions({
+  collection: validationpixels,
+  properties: ['class'],
+  scale: 30 //Lin_adjust the resolution
+})
+
+// define classifier and train with the samples
+//var mdmodel  = ee.Classifier.minimumDistance('euclidean')
+var validated  = mdmodel.train(validation, 'class', bands)
+
+// apply classifier to the image
+var classimg_validated = satimg.classify(validated)
+
+// Get a confusion matrix representing expected accuracy.
+var testAccuracy = validated.confusionMatrix();
+print('Validation error matrix: ', testAccuracy);
+print('Validation overall accuracy: ', testAccuracy.accuracy());
+
+//-----------------------------------------------------------
+//1.7 Visualize using charts
+
+// chart that shows class area distribution
+var chart = ui.Chart.image.byClass({
+  image: ee.Image.pixelArea().multiply(1e-6)        // pixel area in km2
+            .addBands(classimg.rename('classification')),
+  classBand: 'classification',                     
+  region: Tumad,
+  reducer: ee.Reducer.sum(),
+  scale: 10*10, //Meng Chiao Lin_adjust the resolution
+  classLabels: classlab,
+})
+chart.setOptions({title:'Area per class', hAxis: {title: ''}, vAxis: {title: 'Area (km2)'},
+                 colors: classcol})
+     .setChartType('ColumnChart')
+print(chart)
+
+//End
