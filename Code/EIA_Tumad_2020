@@ -1,0 +1,662 @@
+var Tumad = 
+    /* color: #7e7e7e */
+    /* shown: false */
+    /* locked: true */
+    /* displayProperties: [
+      {
+        "type": "rectangle"
+      }
+    ] */
+    ee.FeatureCollection(
+        [ee.Feature(
+            ee.Geometry.Polygon(
+                [[[26.761355229549153, 40.31220893495116],
+                  [26.761355229549153, 40.29001824315344],
+                  [26.795086690120442, 40.29001824315344],
+                  [26.795086690120442, 40.31220893495116]]], null, false),
+            {
+              "system:index": "0"
+            })]),
+    grass = 
+    /* color: #bf04c2 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry({
+          "type": "GeometryCollection",
+          "geometries": [
+            {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    26.765720917641264,
+                    40.296735846006456
+                  ],
+                  [
+                    26.766021325050932,
+                    40.29732501503122
+                  ],
+                  [
+                    26.765506340920073,
+                    40.29758686628207
+                  ],
+                  [
+                    26.764733864723784,
+                    40.29742320936919
+                  ]
+                ]
+              ],
+              "evenOdd": true
+            },
+            {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    26.762416436134917,
+                    40.298830645865436
+                  ],
+                  [
+                    26.76207311338101,
+                    40.29843787583898
+                  ],
+                  [
+                    26.763231827675444,
+                    40.29811056573943
+                  ],
+                  [
+                    26.763660981117827,
+                    40.298405144900386
+                  ]
+                ]
+              ],
+              "evenOdd": true
+            },
+            {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    26.76533170109523,
+                    40.30464932729391
+                  ],
+                  [
+                    26.765546277816423,
+                    40.30396203744785
+                  ],
+                  [
+                    26.766662076766618,
+                    40.30415840668886
+                  ],
+                  [
+                    26.76657624607814,
+                    40.304616599364586
+                  ]
+                ]
+              ],
+              "geodesic": true,
+              "evenOdd": true
+            },
+            {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    26.77462274233408,
+                    40.310040987281745
+                  ],
+                  [
+                    26.775266472497655,
+                    40.31023733885033
+                  ],
+                  [
+                    26.77518064180918,
+                    40.31092456484486
+                  ],
+                  [
+                    26.77436525026865,
+                    40.31076094024235
+                  ]
+                ]
+              ],
+              "geodesic": true,
+              "evenOdd": true
+            }
+          ],
+          "coordinates": []
+        }),
+        {
+          "class": 0,
+          "system:index": "0"
+        }),
+    forest = 
+    /* color: #ff0000 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPolygon(
+            [[[[26.778166367470366, 40.29375719063284],
+               [26.776921822487456, 40.293593524444276],
+               [26.77683599179898, 40.29254605145097],
+               [26.777994706093413, 40.2923169145694],
+               [26.77902467435513, 40.29277518755563]]],
+             [[[26.778423859535796, 40.29032011743125],
+               [26.78005464261685, 40.29058199582711],
+               [26.779882981239897, 40.29166223348385],
+               [26.777994706093413, 40.291269421788286]]]]),
+        {
+          "class": 1,
+          "system:index": "0"
+        }),
+    water = 
+    /* color: #00ff00 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.Polygon(
+            [[[26.769647671639067, 40.30649738675937],
+              [26.77003390973721, 40.30616602480824],
+              [26.770382596909148, 40.30641147826148],
+              [26.77003927415524, 40.306771475046084],
+              [26.769626213966948, 40.30652602290105]]]),
+        {
+          "class": 2,
+          "system:index": "0"
+        }),
+    built_up = 
+    /* color: #0000ff */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPolygon(
+            [[[[26.779047325585783, 40.300841541290055],
+               [26.779524758790433, 40.30015830396546],
+               [26.779959276650846, 40.30025649418574],
+               [26.779455021356046, 40.30084563251069]]],
+             [[[26.781171856281393, 40.29939456135816],
+               [26.781145034191244, 40.299046799249],
+               [26.781837044117086, 40.29901815993671],
+               [26.781863866207235, 40.299357739572514]]]]),
+        {
+          "class": 3,
+          "system:index": "0"
+        }),
+    bare = 
+    /* color: #999900 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry({
+          "type": "GeometryCollection",
+          "geometries": [
+            {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    26.784326134082907,
+                    40.301792025542625
+                  ],
+                  [
+                    26.78426176106655,
+                    40.30087559876625
+                  ],
+                  [
+                    26.78502350842678,
+                    40.30060557779149
+                  ],
+                  [
+                    26.78552776372158,
+                    40.30157110236767
+                  ],
+                  [
+                    26.785130796787374,
+                    40.301865666440385
+                  ]
+                ]
+              ],
+              "evenOdd": true
+            },
+            {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    26.783618030902975,
+                    40.29991824680399
+                  ],
+                  [
+                    26.784154472705954,
+                    40.30020463556524
+                  ],
+                  [
+                    26.783585844394796,
+                    40.301202895470624
+                  ],
+                  [
+                    26.782845554706686,
+                    40.30117016587151
+                  ]
+                ]
+              ],
+              "evenOdd": true
+            },
+            {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    26.77670866048061,
+                    40.30207022406858
+                  ],
+                  [
+                    26.776665745136373,
+                    40.30173474923331
+                  ],
+                  [
+                    26.77776008641445,
+                    40.301407455105625
+                  ],
+                  [
+                    26.778039036152,
+                    40.301759296228944
+                  ]
+                ]
+              ],
+              "evenOdd": true
+            },
+            {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    26.76874786412441,
+                    40.30198840109162
+                  ],
+                  [
+                    26.76849037205898,
+                    40.301350178470244
+                  ],
+                  [
+                    26.770636139270895,
+                    40.300924693372984
+                  ],
+                  [
+                    26.770958004352682,
+                    40.301350178470244
+                  ]
+                ]
+              ],
+              "evenOdd": true
+            },
+            {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    26.773366447696763,
+                    40.29628120355671
+                  ],
+                  [
+                    26.773302074680405,
+                    40.29646122918175
+                  ],
+                  [
+                    26.772261377582627,
+                    40.29698493736371
+                  ],
+                  [
+                    26.77214336038597,
+                    40.29687037654575
+                  ]
+                ]
+              ],
+              "geodesic": true,
+              "evenOdd": true
+            },
+            {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    26.776443287080397,
+                    40.29554351438586
+                  ],
+                  [
+                    26.777172847932448,
+                    40.29567444359011
+                  ],
+                  [
+                    26.776700779145827,
+                    40.295715358914414
+                  ],
+                  [
+                    26.775230928605666,
+                    40.295658077453446
+                  ]
+                ]
+              ],
+              "geodesic": true,
+              "evenOdd": true
+            },
+            {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    26.778975292390456,
+                    40.296018131544244
+                  ],
+                  [
+                    26.77983359927522,
+                    40.296247255875834
+                  ],
+                  [
+                    26.77985505694734,
+                    40.29641909861465
+                  ],
+                  [
+                    26.779007478898635,
+                    40.296116327781505
+                  ]
+                ]
+              ],
+              "geodesic": true,
+              "evenOdd": true
+            },
+            {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    26.783087901988807,
+                    40.29715174380375
+                  ],
+                  [
+                    26.784429006496254,
+                    40.2975690698249
+                  ],
+                  [
+                    26.784364633479896,
+                    40.297708177925784
+                  ],
+                  [
+                    26.782926969447914,
+                    40.29727448701872
+                  ]
+                ]
+              ],
+              "geodesic": true,
+              "evenOdd": true
+            }
+          ],
+          "coordinates": []
+        }),
+        {
+          "class": 4,
+          "system:index": "0"
+        }),
+    crop = 
+    /* color: #009999 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPolygon(
+            [[[[26.77026038717054, 40.29424195896588],
+               [26.77031403135084, 40.2937345961308],
+               [26.771955543267953, 40.2937182295243],
+               [26.77226667951368, 40.294282875157556]]],
+             [[[26.770399862039316, 40.29189332803945],
+               [26.771408372628915, 40.291983346756965],
+               [26.77125816892408, 40.29264620816625],
+               [26.770163827646005, 40.29254800688627]]]]),
+        {
+          "class": 5,
+          "system:index": "0"
+        }),
+    grass_v = 
+    /* color: #d63000 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPoint(
+            [[26.76639862248371, 40.304152438266684],
+             [26.76663465687702, 40.304283350788445],
+             [26.76534719654987, 40.305199731337005],
+             [26.765089704484442, 40.304970637365344]]),
+        {
+          "class": 0,
+          "system:index": "0"
+        }),
+    forest_v = 
+    /* color: #98ff00 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPoint(
+            [[26.775196268052557, 40.29844113255367],
+             [26.775561048478583, 40.29804836026286],
+             [26.77862949559162, 40.297606488706464],
+             [26.774187757462958, 40.2977701451754],
+             [26.794248418485296, 40.299324861859695]]),
+        {
+          "class": 1,
+          "system:index": "0"
+        }),
+    water_v = 
+    /* color: #0b4a8b */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPoint(
+            [[26.77091620240466, 40.29995531853597],
+             [26.770529964306515, 40.29982439762692],
+             [26.776581027844113, 40.307473694082006],
+             [26.770418966940337, 40.30619657596961],
+             [26.770032728842192, 40.30610657618731]]),
+        {
+          "class": 2,
+          "system:index": "0"
+        }),
+    built_up_v = 
+    /* color: #ffc82d */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPoint(
+            [[26.77999265227455, 40.301308403151864],
+             [26.77997119460243, 40.301447503553824],
+             [26.779713702537002, 40.30154978307842],
+             [26.779386473037185, 40.301488415382245],
+             [26.77950985465187, 40.302077542964376],
+             [26.778125834800186, 40.300776546032694],
+             [26.779214811660232, 40.300911556313345],
+             [26.78023941550392, 40.30090746509667]]),
+        {
+          "class": 3,
+          "system:index": "0"
+        }),
+    bare_v = 
+    /* color: #00ffff */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPoint(
+            [[26.78550727400917, 40.30217573039526],
+             [26.78354389701027, 40.30216754811482],
+             [26.77731044325966, 40.302838491821014],
+             [26.777203154899063, 40.30256847869171],
+             [26.78602225814003, 40.30109566080664],
+             [26.77713928053079, 40.30233117358215],
+             [26.775937650892118, 40.301823871487116],
+             [26.771952741023316, 40.307901996639515],
+             [26.765730016108765, 40.307214739888835]]),
+        {
+          "class": 4,
+          "system:index": "0"
+        }),
+    crop_v = 
+    /* color: #bf04c2 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPoint(
+            [[26.771752411920808, 40.294982429827755],
+             [26.771301800806306, 40.294966063523496],
+             [26.772138650018952, 40.29465510298928],
+             [26.7729951609905, 40.292496760846575],
+             [26.77200810807302, 40.2923494585473],
+             [26.770935224467063, 40.291580207990215]]),
+        {
+          "class": 5,
+          "system:index": "0"
+        });
+/*This script is based on PK's script. 
+2020 Sentinel-2 with PK's land use classification.*/
+
+//1.1 Set the map center according to the research area
+Map.setCenter(26.78761942022299,40.29953888104223,14);
+
+//----------------------------------------------------------
+//1.2 Define input data
+
+//Lin added_import the same geometry for same EIA project
+//Import the Sentinel-2 imagery by using the code from EE data catalog
+function maskS2clouds(image) {
+  var qa = image.select('QA60');
+
+  // Bits 10 and 11 are clouds and cirrus, respectively.
+  var cloudBitMask = 1 << 10;
+  var cirrusBitMask = 1 << 11;
+
+  // Both flags should be set to zero, indicating clear conditions.
+  var mask = qa.bitwiseAnd(cloudBitMask).eq(0)
+      .and(qa.bitwiseAnd(cirrusBitMask).eq(0));
+
+  return image.updateMask(mask).divide(10000);
+}
+
+var dataset = ee.ImageCollection('COPERNICUS/S2_SR')
+                  .filterDate('2020-04-30', '2021-04-30') //According to the EIA time
+                  .filterBounds(Tumad)//Lin added_According to the research area
+                  // Pre-filter to get less cloudy granules.
+                  .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE',20))
+                  .map(maskS2clouds);
+                  
+//Lin added_Select the corresponding band from Sentinel-2
+dataset = dataset
+  .select(['B2','B3','B4','B8','B11','B12']) 
+  .map(function(x){return x.rename(['blue','green','red', 'nir','swir1','swir2'])})
+
+var satimg = dataset.mean()
+ 
+// clip the result to the outline of Tumad
+var satimg = satimg.clip(Tumad)
+
+//--------------------------------------------------------
+//1.3 Visualize satellite imagery
+
+//Lin added_ visualize the rgb map for research area
+var visualization = {
+  min: 0.0,
+  max: 0.3, //change the value accroding to the higher latitude
+  bands: ['red', 'green', 'blue'],
+};
+Map.addLayer(satimg, visualization, 'RGB'); //or median?
+
+//------------------------------------
+//1.4 Obtain training data
+
+//Draw the training area
+// combine the sample regions you've create into a single collection
+var sampleregs  = ee.FeatureCollection([grass,forest,water,built_up,bare,crop])
+
+//-------------------------------------------------------------
+//1.5 Classify image
+
+// selection of bands to use for classification algorithm
+var bands   = ['green','red','nir','swir1','swir2']
+ 
+// sample pixels from the image using the regions
+var training = satimg.sampleRegions({
+  collection: sampleregs,
+  properties: ['class'],
+  scale: 10 //Lin_adjust the resolution
+})
+
+// define classifier and train with the samples
+var mdmodel  = ee.Classifier.minimumDistance('euclidean')
+//var mdmodel  = ee.Classifier.smileRandomForest(10)
+var trained  = mdmodel.train(training, 'class', bands)
+
+// apply classifier to the image
+var classimg = satimg.classify(trained)
+
+// lists with class names, values and colors (for colors use hex RGB or html5 color names)
+var classlab = ['Grassland','Forest','Water','Built-up','Bare','Cropland']
+var classval = [0,1,2,3,4,5]
+var classcol = ['YellowGreen', '184930', 'LightSkyBlue', '#cacaca', 'Moccasin', 'OliveDrab']  
+Map.addLayer(classimg, {min:0, max:5, palette: classcol}, 'Classification',true)
+var lg = require('users/philipkraaijenbrink/tools:legends')
+lg.classLegend(classval, classlab, classcol)
+
+//----------------------------------------------------------
+//1.6 Accuracy assessment
+
+// Meng Chiao Lin added_ Get a confusion matrix representing resubstitution accuracy.
+var trainAccuracy = trained.confusionMatrix();
+print('Resubstitution error matrix: ', trainAccuracy);
+print('Training overall accuracy: ', trainAccuracy.accuracy());
+
+//Define the validation pixels by creating validation pixels set
+
+// combine the validation pixels you've create into a single collection
+var validationpixels  = ee.FeatureCollection([grass_v,forest_v,water_v,built_up_v,bare_v,crop_v])
+
+
+//Sample the input with a different random seed to get validation data.
+var validation = satimg.sampleRegions({
+  collection: validationpixels,
+  properties: ['class'],
+  scale: 10 //Lin_adjust the resolution
+})
+
+// define classifier and train with the samples
+//var mdmodel  = ee.Classifier.minimumDistance('euclidean')
+var validated  = mdmodel.train(validation, 'class', bands)
+
+// apply classifier to the image
+var classimg_validated = satimg.classify(validated)
+
+// Get a confusion matrix representing expected accuracy.
+var testAccuracy = validated.confusionMatrix();
+print('Validation error matrix: ', testAccuracy);
+print('Validation overall accuracy: ', testAccuracy.accuracy());
+
+
+// Export the FeatureCollection.
+// var exportAccuracy = ee.Feature(null, {matrix: trainAccuracy.array()})
+// Export.table.toDrive({
+//   collection: ee.FeatureCollection(exportAccuracy),
+//   description: 'exportAccuracy',
+//   fileFormat: 'CSV'
+// });
+
+//-----------------------------------------------------------
+//1.7 Visualize using charts
+
+// chart that shows class area distribution
+
+var chart = ui.Chart.image.byClass({
+  image: ee.Image.pixelArea().multiply(1e-6)        // pixel area in km2
+            .addBands(classimg.rename('classification')),
+  classBand: 'classification',                     
+  region: Tumad,
+  reducer: ee.Reducer.sum(),
+  scale: 10*10, //Lin_adjust the resolution(ok to be smaller than pixel size)
+  classLabels: classlab,
+})
+chart.setOptions({title:'Area per class', hAxis: {title: ''}, vAxis: {title: 'Area (km2)'},
+                 colors: classcol})
+     .setChartType('ColumnChart')
+print(chart)
+
+//------------------------------------------------------------
+//1.8 Export the Geotif file
+Export.image.toDrive({
+  image:classimg,
+  description:"Tumad_2020",
+  region:Tumad,
+  scale:10,
+})
+
+//End
