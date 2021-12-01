@@ -1,0 +1,454 @@
+var grass = 
+    /* color: #d63000 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.Polygon(
+            [[[5.052013254650092, 52.03707074217102],
+              [5.0557898049430605, 52.041400040407474],
+              [5.04806504298017, 52.04393406921302],
+              [5.042915201671576, 52.046045650139654],
+              [5.036907053478217, 52.04762927036318],
+              [5.035877085216498, 52.04667910496324],
+              [5.039996958263373, 52.04330057548039],
+              [5.043086863048529, 52.03939383237987],
+              [5.046520090587592, 52.036120352289636],
+              [5.049953318126654, 52.031896152811264]]]),
+        {
+          "system:index": "0",
+          "class": 0
+        }),
+    forest = 
+    /* color: #98ff00 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.Polygon(
+            [[[5.363500532727585, 52.106043741968875],
+              [5.364015516858444, 52.10335507468161],
+              [5.368135389905319, 52.10240609458421],
+              [5.368049559216843, 52.10140437146383],
+              [5.37062447987114, 52.100191729163264],
+              [5.373199400525436, 52.100244453427116],
+              [5.374572691541061, 52.09934813246566],
+              [5.37860673389946, 52.10140437146383],
+              [5.377233442883835, 52.10219520737592],
+              [5.377662596326218, 52.103407795206074],
+              [5.375774321179733, 52.10451491182335],
+              [5.374486860852585, 52.10235337287562],
+              [5.371911940198288, 52.10172070751139],
+              [5.370881971936569, 52.10256425933604],
+              [5.369766172986374, 52.10319691273432],
+              [5.368736204724655, 52.10393499702298],
+              [5.367534575085983, 52.10498938196021],
+              [5.366762098889694, 52.10599102456051]]]),
+        {
+          "system:index": "0",
+          "class": 1
+        }),
+    water = 
+    /* color: #0b4a8b */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.Polygon(
+            [[[5.077617863864361, 52.183836788887646],
+              [5.078047017306744, 52.17586333147702],
+              [5.089205006808697, 52.17686338142896],
+              [5.089119176120221, 52.18425778980895]]]),
+        {
+          "system:index": "0",
+          "class": 2
+        }),
+    built_up = 
+    /* color: #ffc82d */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.Polygon(
+            [[[5.09324786019522, 52.09363314652631],
+              [5.094149082424224, 52.08884745657093],
+              [5.095221966030181, 52.088359630144815],
+              [5.097432106258452, 52.08905840688725],
+              [5.09749647927481, 52.0898890140634],
+              [5.09723898720938, 52.090956914856456],
+              [5.097904175045073, 52.09110193644982],
+              [5.100393265010894, 52.091352427182585],
+              [5.101015537502349, 52.09004722320107],
+              [5.1038908655663136, 52.09086462814258],
+              [5.102946727993071, 52.09256530978756],
+              [5.099942653896392, 52.09272350943568],
+              [5.100285976650298, 52.09149744749038],
+              [5.097131698848784, 52.091141487711624],
+              [5.0952434237023, 52.09187977149699],
+              [5.095458000423491, 52.09322447128728]]]),
+        {
+          "system:index": "0",
+          "class": 3
+        }),
+    bare = 
+    /* color: #00ffff */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry({
+          "type": "GeometryCollection",
+          "geometries": [
+            {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    5.7891372409281985,
+                    52.13805826968121
+                  ],
+                  [
+                    5.7926562991557375,
+                    52.138163628601546
+                  ],
+                  [
+                    5.7946304049906985,
+                    52.13716270879634
+                  ],
+                  [
+                    5.797548648398902,
+                    52.137742191424906
+                  ],
+                  [
+                    5.7967761722026125,
+                    52.14027075467411
+                  ],
+                  [
+                    5.801411029380347,
+                    52.1411662530696
+                  ],
+                  [
+                    5.800295230430152,
+                    52.14264115235356
+                  ],
+                  [
+                    5.7940295901713625,
+                    52.14253580402452
+                  ],
+                  [
+                    5.78784978060105,
+                    52.138690419465064
+                  ]
+                ]
+              ],
+              "evenOdd": true
+            },
+            {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    3.9797912182930304,
+                    51.93395414919802
+                  ],
+                  [
+                    3.9850268902901007,
+                    51.92522140422223
+                  ],
+                  [
+                    3.9876018109443976,
+                    51.92527433506761
+                  ],
+                  [
+                    3.9981589856270148,
+                    51.93416583100991
+                  ]
+                ]
+              ],
+              "geodesic": true,
+              "evenOdd": true
+            },
+            {
+              "type": "Point",
+              "coordinates": [
+                5.39321396173333,
+                52.07497407487152
+              ]
+            },
+            {
+              "type": "Point",
+              "coordinates": [
+                4.60769150079583,
+                51.753075876242924
+              ]
+            }
+          ],
+          "coordinates": []
+        }),
+        {
+          "system:index": "0",
+          "class": 4
+        }),
+    crop = 
+    /* color: #d63000 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.Polygon(
+            [[[4.601550243836527, 52.07244524586593],
+              [4.601636074525004, 52.06869933554706],
+              [4.606270931702738, 52.06854105072644],
+              [4.606270931702738, 52.072234217018405]]]),
+        {
+          "class": 5,
+          "system:index": "0"
+        }),
+    grass_v = 
+    /* color: #d63000 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPoint(
+            [[5.183313651151393, 52.07590186676936],
+             [5.184343619413112, 52.07613925465018],
+             [5.1842577887246355, 52.075611724311834],
+             [5.1836569739053, 52.07558534763129],
+             [5.184000296659206, 52.075506217496134],
+             [5.184000296659206, 52.07529520311665]]),
+        {
+          "class": 0,
+          "system:index": "0"
+        }),
+    forest_v = 
+    /* color: #98ff00 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPoint(
+            [[5.175331397123073, 52.07679865880694],
+             [5.1761467886636, 52.07674590683283],
+             [5.170138640470241, 52.077352550771444],
+             [5.169494910306667, 52.07719429662572],
+             [5.160525603360866, 52.06994037946858],
+             [5.160826010770534, 52.0689379273237],
+             [5.161898894376491, 52.068225645018344],
+             [5.160826010770534, 52.06856859717622],
+             [5.153272910184596, 52.07046797682125],
+             [5.153101248807643, 52.06978209904715]]),
+        {
+          "class": 1,
+          "system:index": "0"
+        }),
+    water_v = 
+    /* color: #0b4a8b */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPoint(
+            [[5.179923338956569, 52.0768777866512],
+             [5.1801379156777605, 52.07658765053649],
+             [5.179193778104518, 52.07737892640785],
+             [5.192411704129909, 52.077115169342484],
+             [5.192840857572292, 52.0768777866512],
+             [5.182985287611115, 52.0725784869667],
+             [5.182684880201447, 52.07240043197371],
+             [5.182309370939362, 52.072195997587585],
+             [5.181783657972443, 52.07189264161217]]),
+        {
+          "class": 2,
+          "system:index": "0"
+        }),
+    built_up_v = 
+    /* color: #ffc82d */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPoint(
+            [[5.17271249376174, 52.06832674835873],
+             [5.172497917040548, 52.06833993884518],
+             [5.175943137219492, 52.081943422321544],
+             [5.178689719250742, 52.08239175990668],
+             [5.1828954229860935, 52.082523623045205],
+             [5.184826613476816, 52.082708230784654],
+             [5.173840285351816, 52.08410595032006]]),
+        {
+          "class": 3,
+          "system:index": "0"
+        }),
+    bare_v = 
+    /* color: #00ffff */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPoint(
+            [[5.161661389672947, 52.07314058904032],
+             [5.160717252099705, 52.07345712551158],
+             [5.162948850000095, 52.0730878327436],
+             [5.218130487372639, 52.072159640116155],
+             [5.217272180487873, 52.07173757872387]]),
+        {
+          "class": 4,
+          "system:index": "0"
+        }),
+    crop_v = 
+    /* color: #bf04c2 */
+    /* shown: false */
+    ee.Feature(
+        ee.Geometry.MultiPoint(
+            [[5.178843878838197, 52.05511944023863],
+             [5.177513503166811, 52.05501388499903],
+             [5.174724005791322, 52.05643885969058],
+             [5.172835730644838, 52.05620136706502],
+             [5.201717757317201, 52.05411665539338],
+             [5.200601958367006, 52.05469721778397]]),
+        {
+          "class": 5,
+          "system:index": "0"
+        }),
+    Amelisweerd = 
+    /* color: #d63000 */
+    /* shown: false */
+    /* locked: true */
+    ee.Feature(
+        ee.Geometry.Polygon(
+            [[[5.1589602845953, 52.07700338508719],
+              [5.1550979036138544, 52.074154702344956],
+              [5.148488940601159, 52.067981932796336],
+              [5.155441226367761, 52.06592415330575],
+              [5.168573321704675, 52.06286369048737],
+              [5.17818635881405, 52.0627581535461],
+              [5.177757205371667, 52.06803469512619],
+              [5.184537829761315, 52.073943681577305],
+              [5.175783099536706, 52.080590356634865],
+              [5.16694253862362, 52.07668687375905],
+              [5.16119188249569, 52.07985188605553]]]),
+        {
+          "system:index": "0"
+        });
+ //This script and taining polygons are based on PK's script. Few changes by MC Lin are noted in the script.
+//Meng Chiao Lin added_Visualize sentinel-2 image for drawing training polygons
+/**
+ * Function to mask clouds using the Sentinel-2 QA band
+ * @param {ee.Image} image Sentinel-2 image
+ * @return {ee.Image} cloud masked Sentinel-2 image
+ */
+function maskS2clouds(image) {
+  var qa = image.select('QA60');
+
+  // Bits 10 and 11 are clouds and cirrus, respectively.
+  var cloudBitMask = 1 << 10;
+  var cirrusBitMask = 1 << 11;
+
+  // Both flags should be set to zero, indicating clear conditions.
+  var mask = qa.bitwiseAnd(cloudBitMask).eq(0)
+      .and(qa.bitwiseAnd(cirrusBitMask).eq(0));
+
+  return image.updateMask(mask).divide(10000);
+}
+var nl      = ee.FeatureCollection('users/philipkraaijenbrink/dpg-workshop/rijksgrens_nl')
+var dataset = ee.ImageCollection('COPERNICUS/S2_SR')
+                  .filterDate('2019-01-01', '2020-01-30')
+                  .filterBounds(nl)//Meng Chiao Lin added
+                  // Pre-filter to get less cloudy granules.
+                  .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE',20))
+                  .map(maskS2clouds);
+                  
+//Meng Chiao Lin added_Adjust the corresponding band from Sentinel-2
+dataset = dataset
+  .select(['B2','B3','B4','B8','B11','B12']) 
+  .map(function(x){return x.rename(['blue','green','red', 'nir','swir1','swir2'])})
+
+// for every pixel, get the mean pixel value of all images in the collection
+// for a quick way to filter clouds and possible artefacts
+var satimg = dataset.mean() //or median?
+ 
+// clip the result to the outline of NL
+var satimg = satimg.clip(nl)
+//Meng Chiao Lin added_ visualize the rgb map for drawing polygons
+var sentinel_rgb = {
+  min: 0.0,
+  max: 0.3,
+  bands: ['red', 'green', 'blue'],
+};
+Map.addLayer(satimg, sentinel_rgb, 'sentinel-2');
+
+//input the training area from PK
+// combine the sample regions you've create into a single collection
+var sampleregs  = ee.FeatureCollection([grass,forest,water,built_up,bare,crop])
+// selection of bands to use for classification algorithm
+var bands   = ['green','red','nir','swir1','swir2']
+ 
+// sample pixels from the image using the regions
+var training = satimg.sampleRegions({
+  collection: sampleregs,
+  properties: ['class'],
+  scale: 10 //Meng Chiao Lin_adjust the resolution
+})
+
+// define classifier and train with the samples
+var mdmodel  = ee.Classifier.minimumDistance('euclidean')
+var trained  = mdmodel.train(training, 'class', bands)
+
+// apply classifier to the image
+var classimg = satimg.classify(trained)
+
+//----------------------------------------------------------
+// Meng Chiao Lin added_ Get a confusion matrix representing resubstitution accuracy.
+var trainAccuracy = trained.confusionMatrix();
+print('Resubstitution error matrix: ', trainAccuracy);
+print('Training overall accuracy: ', trainAccuracy.accuracy());
+
+//Create validation pixels set????
+
+// combine the validation pixels you've create into a single collection
+var validationpixels  = ee.FeatureCollection([grass_v,forest_v,water_v,built_up_v,bare_v,crop_v])
+
+
+//Sample the input with a different random seed to get validation data.
+var validation = satimg.sampleRegions({
+  collection: validationpixels,
+  properties: ['class'],
+  scale: 10 //Meng Chiao Lin_adjust the resolution
+})
+
+// define classifier and train with the samples
+//var mdmodel  = ee.Classifier.minimumDistance('euclidean')
+var validated  = mdmodel.train(validation, 'class', bands)
+
+// apply classifier to the image
+var classimg_validated = satimg.classify(validated)
+
+// Get a confusion matrix representing expected accuracy.
+var testAccuracy = validated.confusionMatrix();
+print('Validation error matrix: ', testAccuracy);
+print('Validation overall accuracy: ', testAccuracy.accuracy());
+
+//-----------------------------------------------------------
+// lists with class names, values and colors (for colors use hex RGB or html5 color names)
+var classlab = ['Grassland','Forest','Water','Built-up','Bare','Cropland']
+var classval = [0,1,2,3,4,5]
+var classcol = ['YellowGreen', '184930', 'LightSkyBlue', '#cacaca', 'Moccasin', 'OliveDrab']  
+Map.addLayer(classimg, {min:0, max:5, palette: classcol}, 'Classification',true)
+var lg = require('users/philipkraaijenbrink/tools:legends')
+lg.classLegend(classval, classlab, classcol)
+
+// chart that shows class area distribution
+var nl = ee.FeatureCollection('users/philipkraaijenbrink/dpg-workshop/rijksgrens_nl')
+var chart = ui.Chart.image.byClass({
+  image: ee.Image.pixelArea().multiply(1e-6)        // pixel area in km2
+            .addBands(classimg.rename('classification')),
+  classBand: 'classification',                     
+  region: nl,
+  reducer: ee.Reducer.sum(),
+  scale: 20*20, //Meng Chiao Lin_adjust the resolution
+  classLabels: classlab,
+})
+chart.setOptions({title:'Area per class', hAxis: {title: ''}, vAxis: {title: 'Area (km2)'},
+                 colors: classcol})
+     .setChartType('ColumnChart')
+print(chart)
+
+//Meng Chiao Lin added_Map center
+Map.setCenter(5.1615227922182765,52.06969476902497, 12);
+
+//------------------------------------------------------------
+//1.8 Export the Geotif file
+// Export.image.toDrive({
+//   image:classimg,
+//   description:'Amelisweerd',
+//   region:Amelisweerd,
+//   scale:10,
+// })
+//------------------------------------------------------------
+//1.9 Export map to the cloud
+Export.map.toCloudStorage({
+  image:classimg,
+  description:'Amelisweerd',
+  fileFormat:'jpg',
+  scale:10,
+  region:Amelisweerd,
+})
